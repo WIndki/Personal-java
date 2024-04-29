@@ -17,6 +17,7 @@ public class 动物叫声 {
             sim.showAnimalName(animal);
             sim.playSound(animal);
         }
+        sc.close();
 
     }
 }

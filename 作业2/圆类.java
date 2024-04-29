@@ -13,6 +13,7 @@ public class 圆类 {
             c.move(deltaX, deltaY);
             c.printCircleInfo();
         }
+        sc.close();
     }
 }
 
