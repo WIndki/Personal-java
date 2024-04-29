@@ -1,12 +1,19 @@
-package 实验4;
-
-public class 内容4 {
+package 作业2;
+import java.util.Scanner;
+public class 动物叫声 {
     public static void main(String[] args) {
-        Animal[] animals = new Animal[2];
-        animals[0] = new Dog();
-        animals[1] = new Cat();
-        simulatior sim = new simulatior();
-        for (Animal animal : animals) {
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextLine()){
+            int type = sc.nextInt();
+            String name = sc.next();
+            Animal animal = null;
+            if(type == 1){
+                animal = new Dog();
+            }else if(type == 0){
+                animal = new Cat();
+            }
+            animal.setName(name);
+            simulatior sim = new simulatior();
             sim.showAnimalName(animal);
             sim.playSound(animal);
         }
@@ -26,7 +33,7 @@ abstract class Animal {
 class Dog extends Animal {
     
     public void cry() {
-        System.out.println("Wang,Wang…");
+        System.out.println("Wang,Wang...");
     }
     public String getAnimalName() {
         return name;
@@ -35,7 +42,7 @@ class Dog extends Animal {
 
 class Cat extends Animal {
     public void cry() {
-        System.out.println("Miao,Miao…");
+        System.out.println("Miao,Miao...");
     }
     public String getAnimalName() {
         return name;
