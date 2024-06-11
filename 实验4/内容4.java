@@ -5,6 +5,8 @@ public class 内容4 {
         Animal[] animals = new Animal[2];
         animals[0] = new Dog();
         animals[1] = new Cat();
+        animals[0].setName("Dog");
+        animals[1].setName("Cat");
         simulatior sim = new simulatior();
         for (Animal animal : animals) {
             sim.showAnimalName(animal);
