@@ -22,5 +22,6 @@ public class App {
             System.out.print(number);
             if(i!=circle.size())System.out.print(" ");
         }
+        sc.close();
     }
 }

@@ -17,6 +17,7 @@ public class 学生类 {
         String birthday = sc.next();
         Student student = new Student(name,age,sex,major,birthday);
         System.out.println(student.getInformation());
+        sc.close();
     }
 }
 

@@ -12,12 +12,13 @@ public class Dateprocess{
             Date d = sdf.parse(date);
             Calendar c = Calendar.getInstance();
             c.setTime(d);
-            int year = c.get(Calendar.YEAR);
+            //int year = c.get(Calendar.YEAR);
             int month = c.get(Calendar.MONTH);
-            int day = c.get(Calendar.DAY_OF_MONTH);
+            //int day = c.get(Calendar.DAY_OF_MONTH);
             System.out.println(month);
         }catch(Exception e){
         }
     }
+    sc.close();
     }
 }   
