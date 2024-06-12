@@ -10,6 +10,7 @@ public class 计算阶乘数列和 {
             sum += factorial(i);
         }
         System.out.print(sum);
+        scanner.close();
     }
 
     public static int factorial(int num) {

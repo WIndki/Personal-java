@@ -12,6 +12,7 @@ public class 计算质因数 {
             primeFactorization(n);
             System.out.println();
         }
+        scanner.close();
     }
 
     public static void primeFactorization(int n) {

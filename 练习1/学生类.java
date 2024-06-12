@@ -21,6 +21,7 @@ public class 学生类 {
         cavg /= count;
         System.out.printf("java average:%.2f%n", javaavg);
         System.out.printf("c    average:%.2f%n", cavg);
+        sc.close();
     }
 }
 

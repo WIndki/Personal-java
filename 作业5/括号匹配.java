@@ -7,15 +7,16 @@ public class 括号匹配 {
         Scanner scanner = new Scanner(System.in);
         while(scanner.hasNextLine()){
             String input = scanner.nextLine();
-        String[] lines = input.split("\n");
-        for (String line : lines) {
-            if (isBalanced(line)) {
-                System.out.println("yes");
-            } else {
-                System.out.println("no");
+            String[] lines = input.split("\n");
+            for (String line : lines) {
+                if (isBalanced(line)) {
+                    System.out.println("yes");
+                } else {
+                    System.out.println("no");
+                }
             }
         }
-    }
+        scanner.close();
     }
 
     private static boolean isBalanced(String str) {
